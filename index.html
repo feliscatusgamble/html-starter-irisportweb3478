@@ -1,96 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="/_vercel/insights/script.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
-    />
-    <title>Vercel HTML Starter</title>
-    <meta
-      name="description"
-      content="High-performance HTML based website template."
-    />
-  </head>
-  <body>
-    <h1>Vercel HTML Starter</h1>
-    <p>
-      This template is a simple, but powerful single
-      <code>index.html</code> file deployed to
-      <a href="https://vercel.com">Vercel</a>. When your site is deployed, all
-      static assets (like HTML, JavaScript, CSS, images, and more) are deployed
-      globally to every
-      <a href="https://vercel.com/docs/concepts/edge-network/overview"
-        >Vercel Edge Network</a
-      >
-      region.
-    </p>
-    <h2>Simple, privacy-friendly analytics</h2>
-    <p>
-      Want to understand your visitor traffic? Vercel Analytics gives you
-      first-party, privacy-friendly traffic analytics for your HTML site. This
-      template is already configured using the following script:
-    </p>
-    <pre><code>&lt;script defer src="/_vercel/insights/script.js"&gt;&lt;/script&gt;</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/analytics">Vercel Analytics</a>.
-    </p>
-    <h2>Integrated with git</h2>
-    <p>
-      Deploying updates to your site is as simple as
-      <code>git push</code> thanks to Vercel's advanced
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-      Support for GitHub, GitLab, Bitbucket is zero-configuration, and with the
-      flexible Vercel CLI and API, you can integrate with any tool possible.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-    </p>
-    <h2>Fast <code>gzip</code> compression</h2>
-    <p>
-      To help ensure the smallest possible file sizes for your static assets,
-      the Vercel Edge Network compresses files by default using
-      <code>gzip</code>. You can also optionally use
-      <code>brotli</code> compressesion if you prefer.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/edge-network/compression"
-        >compression</a
-      >.
-    </p>
-    <h2>Advanced routing configuration</h2>
-    <p>
-      Vercel gives you a variety of ways to configure the routing of your
-      website. For example, adding redirects, rewrites, or headers to your page.
-      While you can use <code>vercel.json</code> to define these through JSON,
-      you can also express your routing configuration as code using
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-    <p>
-      Middleware runs before the
-      <a href="https://vercel.com/docs/concepts/edge-network/caching"
-        >Vercel Edge Network Cache</a
-      >, so you can configure routing exactly as your application needs. For
-      example, this template uses <code>middleware.js</code> defined in the root
-      of the repository to add additional security headers to the site:
-    </p>
-    <pre><code>referrer-policy: origin-when-cross-origin
-strict-transport-security: max-age=31536000; includeSubDomains; preload
-x-content-type-options: nosniff
-x-dns-prefetch-control: on
-x-frame-options: DENY</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Iris Portfloio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dfad49ee64.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/Irislogo.png" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p> </p>
+            <h1>Hi, I'm <span>Iris French</span><br>and welcome to my<br> portfolio website</h1>
+        </div>
+    </div>
+</div>   
+<!-----------about----------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/iris.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm currently a 1st year student sudying at the Computer Engineering Department of KMUTT.
+                I'm a person of many interests and rignt now what I'm most interested in is coding. I'm stil learning,
+                but hopefully one day, I can call myself a programming wizard. I'm determined to see this through.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('generalinformation')">General information</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="generalinformation">
+                    <ul>
+                        <li><span>Name</span><br>Miss Iris French</li>
+                        <li><span>Date of Birth</span><br>15 July, 2005</li>
+                        <li><span>Age</span><br>19 years old</li>
+                        <li><span>Religion</span><br>Buddhism</li>
+                        <li><span>IELTS score</span><br>8.0</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Kindergarten</span><br>Parntawan Kindergarten</li>
+                        <li><span>Elementary School</span><br>Buranasuksa School</li>
+                        <li><span>Middle School and High School</span><br>Suankularb Wittayalai Thonburi School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------skills----------->
+
+<div id="skills"></div>
+    <div class="container">
+        <h1 class="sub-title">My Skills</h1>
+        <div class="skills-list">
+            <div>
+                <h2>Can play piano</h2>
+            </div>
+            <div>
+                <h2>Can draw with gel pens</h2>
+            </div>       
+            <div>
+                <h2>Can speak fluent English</h2>
+            </div>   
+            <div>
+                <h2>Can do basic C programming</h2>
+            </div>                          
+        </div>
+    </div>
+
+<!--------Portfolio----------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-titles">My Past Achievements</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/kiatibat_1.jpg">
+                <div class="layer">
+                    <h3>Gold Medal awarded for Multi Skills  
+                        competition at the Central English  
+                        Medium Instruction Programmes  
+                        Open House 2022</h3>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/kiatibat_2.jpg">
+                <div class="layer">
+                    <h3>Gold Medal awarded for Impromptu   
+                        Speech “งานศิลปะหัตถกรรมนักเรียน    
+                        ระดับเขต พื้นที่การศึกษา ครั้งที่ ๗๐ ปี 
+                        การศึกษา ๒๕๖๕”</h3>
+                </div>                
+            </div>
+            <div class="work">
+                <img src="images/tesetcer.jpg">
+                <div class="layer">
+                    <h3>Gold Medal certificate awarded among upper   
+                        secondary school for Thailand English Skills  
+                        Evaluation Test, TESET 2023</h3>
+                </div>                
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------contacts----------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-paper-plane"></i> iris.fren@mail.kmutt.ac.th</p>
+                <p><i class="fa-solid fa-phone"></i> 0922571933</p>
+                <dic class="social-icons">
+                    <a href="https://www.facebook.com/iris.french.980"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/igiris51/profilecard/?igsh=MWRzYzl4cXM2Y21xOQ=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://youtu.be/dQw4w9WgXcQ?si=ml4H8jOf5AGjcprg"><i class="fa-brands fa-youtube"></i></a>
+                </dic>                   
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+</body>
 </html>
